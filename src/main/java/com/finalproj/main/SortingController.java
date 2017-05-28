@@ -121,13 +121,13 @@ public class SortingController {
 				break;
 		case SHELL_SORT: name = "Shell Sort";
 				break;
-		case TIM_SORT: name = "Tim Sort";
+		case TIM_SORT: name = "Array.sort(Java)";
 				break;
 		case COUNTING_SORT: name = "Counting Sort";
 				break;
 		case RADIX_SORT: name = "Radix Sort";
 				break;
-		case ADAPTIVE_SORT: name = "Adaptive Sort";
+		case ADAPTIVE_SORT: name = "Smart Sort";
 				break;
 				
 		}

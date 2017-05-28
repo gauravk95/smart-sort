@@ -61,7 +61,7 @@ public class DisplayController {
 	   public void prepareGUI(String[] colNames){
 		   
 		   System.out.println("INFO: Preparing GUI Components");
-	      mainFrame = new JFrame("Adaptive Sort");
+	      mainFrame = new JFrame("Smart Sort");
 	      mainFrame.setSize(800,550);
 	      
 	      panel = new JPanel();
