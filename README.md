@@ -1,4 +1,5 @@
 # smart-sort
-An Hadoop application to Sort Big Data using an Adaptive Sort Technique
+Smart Sort is an Hybrid, Intelligent, Adaptive and efficient sorting algorithm that tries to utilize the best of sorting algorithm like Insertion Sort, Shell Sort, Quick Sort, Counting Sort and Merge Sort
 
-# Work in Progress...
+# Work in Progress...Improvement Required
+
