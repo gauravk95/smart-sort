@@ -394,4 +394,28 @@ public String toString() {
 		return temp;
 	}
 	
+	public void writeSmartSortResults()
+	{
+		//write the sort result to a file
+		 if(GlobalValuesAndConstants.DATA_TYPE_INDEX==GlobalValuesAndConstants.DATA_TYPE_INT)
+		 {
+			SmartSort temp = new SmartSort(this.intArr);
+			temp.sort();
+			temp.writeSortedArrayInteger();
+		 }
+		 else if(GlobalValuesAndConstants.DATA_TYPE_INDEX==GlobalValuesAndConstants.DATA_TYPE_FLOAT)
+		 {
+			SmartSort temp = new SmartSort(this.fltArr);
+			temp.sort();
+			temp.writeSortedArrayFloat();
+		 }
+		 else
+		 {
+			SmartSort temp = new SmartSort(this.strArr);
+			temp.sort();
+			temp.writeSortedArrayString();
+		 }
+		 
+	}
+	
 }

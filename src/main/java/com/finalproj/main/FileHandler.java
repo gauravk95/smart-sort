@@ -59,7 +59,7 @@ public class FileHandler {
 			    
 			    	   final String dir = System.getProperty("user.dir");
 			    	   try {  
-					         out = new FileOutputStream(path,true);
+					         out = new FileOutputStream(dir+"/"+path,true);
 					         BufferedWriter br = new BufferedWriter(new OutputStreamWriter(out));	
 					         br.append(res);
 					         br.newLine();
@@ -79,6 +79,7 @@ public class FileHandler {
 			    	   
 			         return 1;
 	}
+	
 	
 	//clear the output file
 	public static int clearOutputFile(String path) throws IOException

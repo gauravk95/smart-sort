@@ -1,5 +1,9 @@
 package com.finalproj.main.SortingAlgorithm.Primitive;
 
+import java.io.IOException;
+
+import com.finalproj.main.FileHandler;
+
 /****************************************************
 
  * Smart Sort is an Hybrid, Adaptive and efficient sorting
@@ -18,6 +22,8 @@ package com.finalproj.main.SortingAlgorithm.Primitive;
  * Improve the main analyser itself
  * 
  * Improve the input analyser for float and string datatypes
+ * 
+ * Update the Parameters based on the analysis of previous data
  * 
  */
 
@@ -1134,4 +1140,91 @@ private void submitChunkToMergerString(int startIndex, int endIndex) {
 			System.out.println(""+temp[i]);
 		}	
 	}
+	
+	public void writeSortedArrayString()
+	{
+		String fileName = "SortedResultString.txt";
+		
+		try {
+			FileHandler.clearOutputFile(fileName);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		System.out.println("\nINFO: Writing sorted data to file  ");
+		for(int i=0;i<N;i++)
+		{
+			try {
+				FileHandler.writeOutputFile(fileName, stackString[i]);
+			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		System.out.println("\nINFO: Write completed  ");
+	}
+	
+
+	public void writeSortedArrayFloat()
+	{
+		String fileName = "SortedResultFloat.txt";
+		try {
+			FileHandler.clearOutputFile(fileName);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		System.out.println("\nINFO: Writing sorted data to file  ");
+		for(int i=0;i<N;i++)
+		{
+			try {
+				FileHandler.writeOutputFile(fileName, stackFloat[i].toString());
+			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		System.out.println("\nINFO: Write Completed  ");
+	}
+	
+
+	public void writeSortedArrayInteger()
+	{
+		String fileName = "SortedResultInteger.txt";
+		
+		try {
+			FileHandler.clearOutputFile(fileName);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		System.out.println("\nINFO: Writing sorted data to file  ");
+		for(int i=0;i<N;i++)
+		{
+			try {
+				FileHandler.writeOutputFile(fileName, stackInteger[i].toString());
+			} catch (NumberFormatException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+		System.out.println("\nINFO: Write Completed  ");
+	}
+	
+	
 }

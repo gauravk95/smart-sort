@@ -89,6 +89,10 @@ public class SortingController {
 		}
 		
 		//System.out.println("\n****************************SORTED RECORD****************************\n"+this.mainRecords.toString());
+		
+		//Finally write the output of the sorted array to a file to verify the output
+		//TODO: comment this line if u dont want to verify the output
+		this.mainRecords.writeSmartSortResults();
 			
 	}
 	
