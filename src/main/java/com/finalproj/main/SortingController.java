@@ -11,10 +11,11 @@ public class SortingController {
 	public final static int QUICK_SORT = 3 ;
 	public final static int HEAP_SORT = 4 ;
 	public final static int SHELL_SORT = 5 ;
-	public final static int TIM_SORT = 6 ;
-	public final static int COUNTING_SORT = 7 ;
-	public final static int RADIX_SORT = 8 ;
-	public final static int ADAPTIVE_SORT = 9 ;
+	//change if to 6, if need to include
+	public final static int TIM_SORT = 9999 ;
+	public final static int COUNTING_SORT = 6 ;
+	public final static int RADIX_SORT = 7 ;
+	public final static int ADAPTIVE_SORT = 8 ;
 	
 	public static int N_RUNS= 1000;
 	
@@ -132,8 +133,7 @@ public class SortingController {
 		case RADIX_SORT: name = "Radix Sort";
 				break;
 		case ADAPTIVE_SORT: name = "Smart Sort";
-				break;
-				
+				break;				
 		}
 		
 		return name;

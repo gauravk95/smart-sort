@@ -47,7 +47,7 @@ public class SmartSort {
 	private int SS_MAX_RANGE = 50000;
 	
 	private int QS_MIN_SIZE = IS_MAX_SIZE;
-	private int QS_MAX_SIZE = 500000;
+	private int QS_MAX_SIZE = 250000;
 	private int QS_DEFAULT_SIZE = 50000;
 	
 	private int CS_MIN_SIZE = IS_MAX_SIZE;
@@ -175,11 +175,11 @@ public class SmartSort {
 		// TODO create for descending order, too
 		
 		//ensure all element are covered once
-		for(int i = 0; i < N-1 ; i++)
+		for(int i = 0; i <=N-1 ; i++)
 		{
 			//Initialize(or)Reset the variables min,max,first,last
 			minInteger=arrInteger[i];
-			maxInteger=arrInteger[i+1];
+			maxInteger=arrInteger[i];
 			first = i;
 			last = i;
 			

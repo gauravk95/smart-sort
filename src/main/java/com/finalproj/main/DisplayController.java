@@ -174,7 +174,7 @@ public class DisplayController {
 		      
 		      fileSelectorPanel.add(chosenFileText);
 		      fileSelectorPanel.add(showFileDialogButton);
-		      fileSelectorPanel.setBorder(new EmptyBorder(6,0,6,0));//top,left,bottom,right
+		      fileSelectorPanel.setBorder(new EmptyBorder(5,0,6,0));//top,left,bottom,right
 		      
 		      panel.add(fileSelectorPanel);
 		      panel.add(new JSeparator(SwingConstants.HORIZONTAL));
