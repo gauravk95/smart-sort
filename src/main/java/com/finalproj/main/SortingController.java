@@ -132,7 +132,7 @@ public class SortingController {
 				break;
 		case RADIX_SORT: name = "Radix Sort";
 				break;
-		case ADAPTIVE_SORT: name = "Smart Sort";
+		case ADAPTIVE_SORT: name = "Predictive Sort";
 				break;				
 		}
 		
